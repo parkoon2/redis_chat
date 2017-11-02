@@ -10,7 +10,7 @@ const Common = (function () {
         getServer: function (type) {
             return type === 'signal' ? serverConfig.signalServer[ Math.floor(Math.random() * 3) ]
                                      : serverConfig.coreServer[0]
-        }
+        },
     }
 
     return {

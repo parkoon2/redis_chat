@@ -1,13 +1,13 @@
 <html>
     <head>
-        <!-- <script src="<%= signal %>/socket.io/socket.io.js"></script> -->
+        <script src="<%= core %>/socket.io/socket.io.js"></script> -->
     </head>
     <body>
         <b>SIGNAL :</b> <%= signal %>
         <b>CORE :</b> <%= core %>
         
         <script>
-            //let socket = io.connect('<%= signal %>');
+            let socket = io.connect('<%= core %>');
             
         </script>
         

@@ -6,6 +6,7 @@ const http = require('http');
       path = require('path');
       index = require('./route/index');
       chat = require('./route/chat');
+      upload = require('./route/upload');
       socket = require('socket.io');
 
 let app, server, port, io;
@@ -26,6 +27,7 @@ app.set('view engine', 'ejs');
  */
 app.use('/', index);
 app.use('/chat', chat);
+app.use('/upload', upload);
 
 /**
  * Port Check & Listen
